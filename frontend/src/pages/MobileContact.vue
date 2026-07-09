@@ -306,7 +306,7 @@ const tabs = [
 ]
 
 const deals = createResource({
-  url: 'crm.api.contact.get_linked_deals',
+  url: 'blueheads_crm.api.contact.get_linked_deals',
   cache: ['deals', props.contactId],
   params: { contact: props.contactId },
   auto: true,
@@ -319,7 +319,7 @@ const rows = computed(() => {
 })
 
 const sections = createResource({
-  url: 'crm.fcrm.doctype.crm_fields_layout.crm_fields_layout.get_sidepanel_sections',
+  url: 'blueheads_crm.fblueheads_crm.doctype.crm_fields_layout.crm_fields_layout.get_sidepanel_sections',
   cache: ['sidePanelSections', 'Contact'],
   params: { doctype: 'Contact' },
   auto: true,
@@ -436,7 +436,7 @@ function getParsedSections(_sections) {
 }
 
 async function setAsPrimary(field, value) {
-  let d = await call('crm.api.contact.set_as_primary', {
+  let d = await call('blueheads_crm.api.contact.set_as_primary', {
     contact: contact.doc.name,
     field,
     value,
@@ -449,7 +449,7 @@ async function setAsPrimary(field, value) {
 
 async function createNew(field, value) {
   if (!value) return
-  let d = await call('crm.api.contact.create_new', {
+  let d = await call('blueheads_crm.api.contact.create_new', {
     contact: contact.doc.name,
     field,
     value,

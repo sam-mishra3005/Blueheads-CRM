@@ -82,7 +82,7 @@ const _view = ref({
 async function create() {
   view.value.doctype = props.doctype
   let v = await call(
-    'crm.fcrm.doctype.crm_view_settings.crm_view_settings.create',
+    'blueheads_crm.fblueheads_crm.doctype.crm_view_settings.crm_view_settings.create',
     { view: view.value },
   )
   show.value = false
@@ -91,7 +91,7 @@ async function create() {
 
 async function update() {
   view.value.doctype = props.doctype
-  await call('crm.fcrm.doctype.crm_view_settings.crm_view_settings.update', {
+  await call('blueheads_crm.fblueheads_crm.doctype.crm_view_settings.crm_view_settings.update', {
     view: view.value,
   })
   show.value = false

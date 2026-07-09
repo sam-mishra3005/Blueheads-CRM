@@ -172,7 +172,7 @@ const roleMap = {
 }
 
 const inviteByEmail = createResource({
-  url: 'crm.api.invite_by_email',
+  url: 'blueheads_crm.api.invite_by_email',
   makeParams() {
     return {
       emails: convertArrayToString(invitees.value),

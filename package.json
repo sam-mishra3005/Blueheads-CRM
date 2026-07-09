@@ -1,9 +1,8 @@
 {
 	"private": true,
 	"type": "module",
-	"name": "crm",
-	"description": "Frappe CRM helps you work, not slow you down. Open-source, intuitive, and free from extra costs.",
-	"description": "Custom CRM application for internship project.",
+	"name": "blueheads-crm",
+	"description": "Custom CRM application for internship project (Blueheads CRM).",
 	"scripts": {
 		"postinstall": "cd frontend && yarn install --check-files",
 		"dev": "cd frontend && yarn dev",

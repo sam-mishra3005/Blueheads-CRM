@@ -18,32 +18,32 @@ export default defineConfig(async ({ mode }) => {
         },
         manifest: {
           display: 'standalone',
-          name: 'Frappe CRM',
-          short_name: 'Frappe CRM',
-          start_url: '/crm',
+          name: 'Blueheads CRM',
+          short_name: 'Blueheads CRM',
+          start_url: '/blueheads_crm',
           description:
             'Modern & 100% Open-source CRM tool to supercharge your sales operations',
           icons: [
             {
-              src: '/assets/crm/manifest/manifest-icon-192.maskable.png',
+              src: '/assets/blueheads_crm/manifest/manifest-icon-192.maskable.png',
               sizes: '192x192',
               type: 'image/png',
               purpose: 'any',
             },
             {
-              src: '/assets/crm/manifest/manifest-icon-192.maskable.png',
+              src: '/assets/blueheads_crm/manifest/manifest-icon-192.maskable.png',
               sizes: '192x192',
               type: 'image/png',
               purpose: 'maskable',
             },
             {
-              src: '/assets/crm/manifest/manifest-icon-512.maskable.png',
+              src: '/assets/blueheads_crm/manifest/manifest-icon-512.maskable.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'any',
             },
             {
-              src: '/assets/crm/manifest/manifest-icon-512.maskable.png',
+              src: '/assets/blueheads_crm/manifest/manifest-icon-512.maskable.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'maskable',
@@ -93,7 +93,7 @@ export default defineConfig(async ({ mode }) => {
       lucideIcons: true,
       jinjaBootData: true,
       buildConfig: {
-        indexHtmlPath: '../crm/www/crm.html',
+        indexHtmlPath: '../blueheads_crm/www/blueheads_blueheads_crm.html',
         emptyOutDir: true,
         sourcemap: true,
       },

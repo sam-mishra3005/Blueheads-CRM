@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/assets/crm/frontend/ && yarn copy-html-entry",
-    "copy-html-entry": "cp ../crm/public/frontend/index.html ../crm/www/crm.html",
+    "build": "vite build --base=/assets/blueheads_crm/frontend/ && yarn copy-html-entry",
+    "copy-html-entry": "cp ../blueheads_crm/public/frontend/index.html ../blueheads_crm/www/blueheads_blueheads_crm.html",
     "serve": "vite preview",
     "test": "vitest",
     "test:run": "vitest run",

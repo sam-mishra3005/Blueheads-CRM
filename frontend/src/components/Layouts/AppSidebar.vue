@@ -342,13 +342,13 @@ const { isOnboardingStepsCompleted, setUp } = useOnboarding('frappecrm')
 async function getFirstLead() {
   let firstLead = localStorage.getItem('firstLead' + user)
   if (firstLead) return firstLead
-  return await call('crm.api.onboarding.get_first_lead')
+  return await call('blueheads_crm.api.onboarding.get_first_lead')
 }
 
 async function getFirstDeal() {
   let firstDeal = localStorage.getItem('firstDeal' + user)
   if (firstDeal) return firstDeal
-  return await call('crm.api.onboarding.get_first_deal')
+  return await call('blueheads_crm.api.onboarding.get_first_deal')
 }
 
 const showIntermediateModal = ref(false)
@@ -403,7 +403,7 @@ const steps = reactive([
       currentStep.value = {
         title: __('Convert lead to deal'),
         buttonLabel: __('Convert'),
-        videoURL: '/assets/crm/videos/convertToDeal.mov',
+        videoURL: '/assets/blueheads_crm/videos/convertToDeal.mov',
         onClick: async () => {
           showIntermediateModal.value = false
           currentStep.value = {}
@@ -518,7 +518,7 @@ const steps = reactive([
       currentStep.value = {
         title: __('Change deal status'),
         buttonLabel: __('Change'),
-        videoURL: '/assets/crm/videos/changeDealStatus.mov',
+        videoURL: '/assets/blueheads_crm/videos/changeDealStatus.mov',
         onClick: async () => {
           showIntermediateModal.value = false
           currentStep.value = {}
@@ -635,7 +635,7 @@ const articles = ref([
     ],
   },
   {
-    title: __('Frappe CRM mobile'),
+    title: __('Blueheads CRM mobile'),
     opened: false,
     subArticles: [
       { name: 'mobile-app-installation', title: __('Mobile App Installation') },

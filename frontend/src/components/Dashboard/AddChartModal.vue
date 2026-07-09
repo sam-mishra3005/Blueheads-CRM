@@ -125,7 +125,7 @@ async function getChart(type: string) {
         : donutChart.value
 
   await createResource({
-    url: 'crm.api.dashboard.get_chart',
+    url: 'blueheads_crm.api.dashboard.get_chart',
     params: {
       name,
       type,

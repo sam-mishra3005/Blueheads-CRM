@@ -151,7 +151,7 @@ const handleMobileView = (componentName) => {
 }
 
 let router = createRouter({
-  history: createWebHistory('/crm'),
+  history: createWebHistory('/blueheads_crm'),
   routes,
 })
 

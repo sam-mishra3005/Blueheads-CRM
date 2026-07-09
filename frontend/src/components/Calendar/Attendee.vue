@@ -171,7 +171,7 @@ watchDebounced(
 )
 
 const filterOptions = createResource({
-  url: 'crm.api.contact.search_emails',
+  url: 'blueheads_crm.api.contact.search_emails',
   method: 'POST',
   cache: [text.value, 'Contact'],
   params: { txt: text.value },

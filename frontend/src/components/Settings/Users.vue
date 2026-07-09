@@ -257,7 +257,7 @@ function getDropdownOptions(user) {
 function updateRole(user, newRole) {
   if (user.role === newRole) return
 
-  call('crm.api.user.update_user_role', {
+  call('blueheads_crm.api.user.update_user_role', {
     user: user.name,
     new_role: newRole,
   })
@@ -276,7 +276,7 @@ function updateRole(user, newRole) {
 }
 
 function removeUser(user) {
-  call('crm.api.user.remove_crm_roles_from_user', {
+  call('blueheads_crm.api.user.remove_crm_roles_from_user', {
     user: user.name,
   })
     .then(() => {

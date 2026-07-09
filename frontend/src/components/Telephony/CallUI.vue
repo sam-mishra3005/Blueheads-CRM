@@ -101,7 +101,7 @@ function makeCallUsing() {
 }
 
 async function setDefaultCallingMedium() {
-  await call('crm.integrations.api.set_default_calling_medium', {
+  await call('blueheads_crm.integrations.api.set_default_calling_medium', {
     medium: callMedium.value,
   })
 
