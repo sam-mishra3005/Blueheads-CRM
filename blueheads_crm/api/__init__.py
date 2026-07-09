@@ -65,7 +65,7 @@ def check_app_permission():
 		allowed_modules = get_modules_from_all_apps_for_user()
 
 	allowed_modules = [x["module_name"] for x in allowed_modules]
-	if "FCRM" not in allowed_modules:
+	if "Fblueheads Crm" not in allowed_modules:
 		return False
 
 	roles = frappe.get_roles()
