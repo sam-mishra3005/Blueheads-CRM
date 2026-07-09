@@ -15,7 +15,15 @@ export default {
   ],
   safelist: [{ pattern: /!(text|bg)-/, variants: ['hover', 'active'] }],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: '#116dff',
+        'brand-dark': '#0069ff',
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
