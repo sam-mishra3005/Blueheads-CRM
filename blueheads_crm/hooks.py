@@ -18,11 +18,11 @@ add_to_apps_screen = [
 		"logo": "/assets/blueheads_crm/images/logo.svg",
 		"title": "Blueheads CRM",
 		"route": "/blueheads_crm",
-		"has_permission": "blueheads_blueheads_crm.api.check_app_permission",
+		"has_permission": "blueheads_crm.api.check_app_permission",
 	}
 ]
 
-get_site_info = "blueheads_blueheads_crm.activation.get_site_info"
+get_site_info = "blueheads_crm.activation.get_site_info"
 
 export_python_type_annotations = True
 require_type_annotated_api_methods = True
@@ -69,6 +69,7 @@ doctype_js = {
 # }
 
 website_route_rules = [
+	{"from_route": "/blueheads_crm/<path:app_path>", "to_route": "blueheads_crm"},
 	{"from_route": "/crm/<path:app_path>", "to_route": "blueheads_crm"},
 ]
 

@@ -93,7 +93,7 @@ export default defineConfig(async ({ mode }) => {
       lucideIcons: true,
       jinjaBootData: true,
       buildConfig: {
-        indexHtmlPath: '../blueheads_crm/www/blueheads_blueheads_crm.html',
+        indexHtmlPath: '../blueheads_crm/www/blueheads_crm.html',
         emptyOutDir: true,
         sourcemap: true,
       },
